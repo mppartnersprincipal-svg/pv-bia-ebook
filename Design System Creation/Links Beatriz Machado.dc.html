@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beatriz Machado · Psicóloga Integrativa</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Jost:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; background: #FAF8F4; }
+a { color: #0E3452; text-decoration: none; } a:hover { color: #092539; }
+@keyframes bmReveal { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</helmet>
+<div style="font-family: 'Jost', sans-serif; color: #1F2A33; background: #FAF8F4; min-height: 100vh; line-height: 1.6;">
+  <main style="max-width: 560px; margin: 0 auto; padding: 96px 24px 0;">
+
+    <!-- Header -->
+    <header style="display: flex; flex-direction: column; align-items: center; text-align: center; animation: bmReveal 500ms cubic-bezier(0.25,0.1,0.25,1) both;">
+      <div style="width: 112px; height: 112px; border-radius: 50%; padding: 3px; background: #FAF8F4; border: 1px solid #E9E4DB;">
+        <img src="assets/foto-1.jpeg" alt="Beatriz Machado" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: 50% 20%;">
+      </div>
+      <h1 style="font-family: 'Prata', serif; font-weight: 400; font-size: 32px; line-height: 1.2; letter-spacing: 0.01em; color: #0E3452; margin: 24px 0 0;">Beatriz Machado</h1>
+      <p style="font-size: 12px; letter-spacing: 0.25em; text-transform: uppercase; color: #6B7680; margin: 10px 0 0;">Psicóloga Integrativa · CRP 09/16582</p>
+      <p style="font-size: 15px; font-weight: 300; color: #44505A; margin: 14px 0 0; max-width: 400px; text-wrap: pretty;">Uma mente saudável é o primeiro passo para uma vida com mais equilíbrio, consciência e qualidade.</p>
+      <div style="display: flex; gap: 12px; margin-top: 24px;">
+        <sc-for list="{{ socials }}" as="s" hint-placeholder-count="2">
+          <a href="{{ s.href }}" target="_blank" rel="noopener" aria-label="{{ s.label }}" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid #E9E4DB; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #0E3452; transition: background 200ms cubic-bezier(0.25,0.1,0.25,1), color 200ms;" style-hover="background: #0E3452; color: #FAF8F4; border-color: #0E3452;">
+            <span style="display: flex;" dangerouslySetInnerHTML="{{ s.svg }}"></span>
+          </a>
+        </sc-for>
+      </div>
+    </header>
+
+    <!-- CTA destaque -->
+    <a href="{{ whatsappHref }}" target="_blank" rel="noopener" style="display: block; margin-top: 48px; background: #0E3452; border-radius: 16px; padding: 28px; color: #FAF8F4; box-shadow: 0 2px 8px rgba(14,52,82,0.06); transition: transform 200ms cubic-bezier(0.25,0.1,0.25,1), box-shadow 200ms, background 200ms; animation: bmReveal 500ms cubic-bezier(0.25,0.1,0.25,1) 80ms both;" style-hover="transform: translateY(-2px); box-shadow: 0 12px 32px rgba(14,52,82,0.14); background: #092539; color: #FAF8F4;" style-active="transform: translateY(0) scale(0.99);">
+      <p style="margin: 0; font-size: 12px; letter-spacing: 0.25em; text-transform: uppercase; color: #C2A878;">Primeira sessão</p>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 8px;">
+        <div>
+          <p style="margin: 0; font-family: 'Jost', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: 0.02em; line-height: 1.35;">Agende sua primeira sessão</p>
+          <p style="margin: 4px 0 0; font-size: 14px; font-weight: 300; color: rgba(250,248,244,0.75);">Atendimento psicológico individual, com acolhimento e escuta</p>
+        </div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </div>
+    </a>
+
+    <!-- Links -->
+    <nav style="display: flex; flex-direction: column; gap: 16px; margin-top: 16px;">
+      <sc-for list="{{ links }}" as="l" hint-placeholder-count="2">
+        <a href="{{ l.href }}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 16px; background: #FFFFFF; border: 1px solid #E9E4DB; border-radius: 16px; padding: 20px 24px; min-height: 76px; box-sizing: border-box; box-shadow: 0 2px 8px rgba(14,52,82,0.06); transition: transform 200ms cubic-bezier(0.25,0.1,0.25,1), box-shadow 200ms; animation: bmReveal 500ms cubic-bezier(0.25,0.1,0.25,1) {{ l.delay }} both;" style-hover="transform: translateY(-2px); box-shadow: 0 6px 20px rgba(14,52,82,0.10);" style-active="transform: translateY(0) scale(0.99);">
+          <span style="width: 44px; height: 44px; border-radius: 999px; background: #DCE5EC; display: flex; align-items: center; justify-content: center; color: #0E3452; flex-shrink: 0;" dangerouslySetInnerHTML="{{ l.svg }}"></span>
+          <span style="flex: 1; min-width: 0;">
+            <span style="display: block; font-weight: 500; font-size: 17px; letter-spacing: 0.02em; color: #0E3452;">{{ l.title }}</span>
+            <span style="display: block; font-size: 14px; font-weight: 300; color: #44505A;">{{ l.desc }}</span>
+          </span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B7680" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+      </sc-for>
+    </nav>
+
+    <!-- Card de atendimento (informativo) -->
+    <section style="background: #FFFFFF; border: 1px solid #E9E4DB; border-radius: 16px; padding: 24px 28px; margin-top: 48px; animation: bmReveal 500ms cubic-bezier(0.25,0.1,0.25,1) 400ms both;">
+      <p style="margin: 0; font-family: 'Jost', sans-serif; font-weight: 500; font-size: 17px; letter-spacing: 0.02em; color: #0E3452;">Como posso te ajudar</p>
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px; font-size: 14px; color: #44505A;">
+        <div style="display: flex; align-items: center; gap: 10px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2A878" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg>Psicoterapia individual: um espaço seguro para compreender suas emoções</div>
+        <div style="display: flex; align-items: center; gap: 10px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2A878" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path></svg>Autoconhecimento para viver com mais consciência e clareza</div>
+        <div style="display: flex; align-items: center; gap: 10px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C2A878" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>Atendimento humanizado, com escuta ativa e respeito à sua história</div>
+      </div>
+      <div style="display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap;">
+        <span style="font-size: 13px; padding: 6px 14px; border-radius: 999px; border: 1px solid #E9E4DB; color: #44505A;">Saúde Mental</span>
+        <span style="font-size: 13px; padding: 6px 14px; border-radius: 999px; border: 1px solid #E9E4DB; color: #44505A;">Equilíbrio Emocional</span>
+        <span style="font-size: 13px; padding: 6px 14px; border-radius: 999px; border: 1px solid #E9E4DB; color: #44505A;">Qualidade de Vida</span>
+      </div>
+    </section>
+
+    <!-- Frase da marca -->
+    <section style="display: flex; flex-direction: column; align-items: center; gap: 14px; margin-top: 48px; text-align: center; animation: bmReveal 500ms cubic-bezier(0.25,0.1,0.25,1) 480ms both;">
+      <div style="width: 40px; height: 1px; background: #C2A878;"></div>
+      <p style="margin: 0; font-family: 'Prata', serif; font-weight: 400; font-size: 20px; line-height: 1.5; color: #0E3452; max-width: 380px; text-wrap: balance;">“O princípio da saúde começa na mente.”</p>
+    </section>
+
+    <!-- Footer -->
+    <footer style="display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 64px 0 48px; text-align: center;">
+      <div style="width: 64px; height: 1px; background: #E9E4DB;"></div>
+      <img src="assets/logo-mark.jpeg" alt="" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;">
+      <p style="margin: 0; font-size: 12px; letter-spacing: 0.25em; text-transform: uppercase; color: #6B7680;">Beatriz Machado · CRP 09/16582</p>
+    </footer>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 480, &quot;height&quot;: 1200}, &quot;whatsappNumber&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;5562999999999&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Contato&quot;}, &quot;instagramUser&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;beatriz.machadoa&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Contato&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const wa = this.props.whatsappNumber ?? '5562999999999';
+    const ig = this.props.instagramUser ?? '';
+    const ic = {
+      instagram: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>',
+      instagramLg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>',
+      whatsapp: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>',
+      whatsappLg: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>'
+    };
+    const h = s => ({ __html: s });
+    return {
+      whatsappHref: 'https://wa.me/' + wa,
+      socials: [
+        { label: 'Instagram', href: 'https://instagram.com/' + ig, svg: h(ic.instagram) },
+        { label: 'WhatsApp', href: 'https://wa.me/' + wa, svg: h(ic.whatsapp) }
+      ],
+      links: [
+        { title: 'Conheça meu trabalho', desc: 'Conteúdos sobre saúde mental e autoconhecimento', href: 'https://instagram.com/' + ig, svg: h(ic.instagramLg), delay: '160ms' },
+        { title: 'Fale comigo no WhatsApp', desc: 'Tire suas dúvidas sobre o atendimento', href: 'https://wa.me/' + wa, svg: h(ic.whatsappLg), delay: '240ms' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

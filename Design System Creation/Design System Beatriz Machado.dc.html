@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Jost:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; background: #FAF8F4; }
+a { color: #0E3452; } a:hover { color: #C2A878; }
+</style>
+</helmet>
+<div style="font-family: 'Jost', sans-serif; color: #1F2A33; background: #FAF8F4; line-height: 1.6;">
+
+  <!-- CAPA -->
+  <header style="min-height: 92vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 96px 24px; background: #0E3452; color: #FAF8F4;">
+    <img src="assets/logo-mark.jpeg" alt="Monograma BM" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+    <p style="margin: 48px 0 0; font-size: 13px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878;">Design System · v1.0</p>
+    <h1 style="font-family: 'Prata', serif; font-weight: 400; font-size: 64px; margin: 16px 0 0; letter-spacing: 0.01em;">Beatriz Machado</h1>
+    <p style="margin: 12px 0 0; font-size: 16px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(250,248,244,0.7);">Psicóloga · CRP 09/16582</p>
+    <p style="max-width: 560px; margin: 40px auto 0; font-size: 17px; font-weight: 300; color: rgba(250,248,244,0.85); text-wrap: pretty;">Fundação visual para a presença digital da Beatriz — começando pela página de links e escalável para o site institucional completo.</p>
+  </header>
+
+  <main style="max-width: 1040px; margin: 0 auto; padding: 0 32px 120px;">
+
+    <!-- 1. BRAND -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">01 — Brand Guidelines</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 24px; color: #0E3452;">Conceito da marca</h2>
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start;">
+        <div>
+          <p style="font-size: 18px; font-weight: 300; margin: 0 0 20px; text-wrap: pretty;"><strong style="font-weight: 500; color: #0E3452;">"Presença serena."</strong> A marca combina a profundidade do azul-petróleo — estabilidade, confiança, escuta — com a leveza da assinatura manuscrita, que traz o gesto humano e pessoal. O sistema traduz isso em superfícies claras e quentes, muito espaço em branco e uma única cor de destaque usada com extrema parcimônia.</p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px 32px; font-size: 15px;">
+            <div><strong style="color: #0E3452; font-weight: 500;">Atributos</strong><br>Acolhedora · Serena · Sofisticada · Confiável · Discreta</div>
+            <div><strong style="color: #0E3452; font-weight: 500;">Personalidade</strong><br>Fala baixo e com precisão. Nunca grita, nunca decora demais. Elegância pela ausência.</div>
+            <div><strong style="color: #0E3452; font-weight: 500;">Tom visual</strong><br>Editorial e institucional — mais revista de arquitetura do que rede social.</div>
+            <div><strong style="color: #0E3452; font-weight: 500;">Anti-referências</strong><br>Templates de Linktree, gradientes vibrantes, emojis, sombras duras, excesso de ícones.</div>
+          </div>
+        </div>
+        <div style="display: grid; gap: 16px;">
+          <img src="assets/logo-horizontal.jpeg" alt="Logo horizontal" style="width: 100%; border-radius: 12px; border: 1px solid #E9E4DB;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <img src="assets/logo-full.jpeg" alt="Selo circular" style="width: 100%; border-radius: 12px; border: 1px solid #E9E4DB;">
+            <img src="assets/logo-mark.jpeg" alt="Monograma" style="width: 100%; border-radius: 12px; border: 1px solid #E9E4DB;">
+          </div>
+          <p style="font-size: 13px; color: #6B7680; margin: 0;">Versões da identidade: horizontal (headers), selo circular (avatar/social) e monograma (favicon, marca d'água).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CORES -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">02 — Paleta de cores</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 8px; color: #0E3452;">Cores</h2>
+      <p style="font-size: 16px; font-weight: 300; max-width: 640px; margin: 0 0 32px;">Navy extraído da logo; neutros quentes extraídos das fotografias (linho, pedra, madeira). O dourado vem das joias da Beatriz e é o único acento — usado apenas em micro-detalhes.</p>
+      <sc-for list="{{ colors }}" as="c" hint-placeholder-count="6">
+        <div style="display: grid; grid-template-columns: 72px 180px 130px 150px 1fr; gap: 20px; align-items: center; padding: 14px 0; border-bottom: 1px solid #E9E4DB; font-size: 14px;">
+          <div style="width: 72px; height: 44px; border-radius: 8px; background: {{ c.hex }}; border: 1px solid #E9E4DB;"></div>
+          <div style="font-weight: 500; color: #0E3452;">{{ c.name }}</div>
+          <div style="font-family: monospace; font-size: 13px;">{{ c.hex }}</div>
+          <div style="font-family: monospace; font-size: 12px; color: #6B7680;">{{ c.rgb }}</div>
+          <div style="color: #44505A;">{{ c.use }}</div>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- 3. TIPOGRAFIA -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">03 — Tipografia</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 8px; color: #0E3452;">Prata + Jost</h2>
+      <p style="font-size: 16px; font-weight: 300; max-width: 640px; margin: 0 0 32px;"><strong style="font-weight: 500;">Prata</strong> (serif de alto contraste) ecoa o wordmark da logo e assina os títulos. <strong style="font-weight: 500;">Jost</strong> (geométrica humanista) ecoa o lettering espaçado "PSICÓLOGA | CRP" e cobre todo o texto funcional. Nunca usar mais de duas famílias.</p>
+      <sc-for list="{{ type }}" as="t" hint-placeholder-count="8">
+        <div style="display: grid; grid-template-columns: 110px 1fr 320px; gap: 24px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid #E9E4DB;">
+          <div style="font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: #6B7680;">{{ t.role }}</div>
+          <div style="font-family: {{ t.family }}; font-size: {{ t.px }}px; font-weight: {{ t.weight }}; line-height: {{ t.lh }}; letter-spacing: {{ t.ls }}; color: #0E3452; text-transform: {{ t.tt }};">{{ t.sample }}</div>
+          <div style="font-family: monospace; font-size: 12px; color: #6B7680;">{{ t.spec }}</div>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- 4. ESPAÇAMENTOS -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">04 — Espaçamentos</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 8px; color: #0E3452;">Escala de 4px</h2>
+      <p style="font-size: 16px; font-weight: 300; max-width: 640px; margin: 0 0 32px;">Base 4. O espaço em branco é o principal elemento decorativo do sistema: na dúvida, use o degrau acima.</p>
+      <sc-for list="{{ spacing }}" as="s" hint-placeholder-count="6">
+        <div style="display: grid; grid-template-columns: 90px 120px 1fr; gap: 20px; align-items: center; padding: 10px 0; border-bottom: 1px solid #E9E4DB; font-size: 14px;">
+          <div style="font-family: monospace; font-size: 13px; color: #0E3452;">{{ s.token }}</div>
+          <div><div style="height: 12px; width: {{ s.px }}px; background: #0E3452; border-radius: 2px; opacity: 0.85;"></div></div>
+          <div style="color: #44505A;">{{ s.use }}</div>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- 5 + 6. RADIUS & SHADOWS -->
+    <section style="padding-top: 96px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px;">
+      <div>
+        <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">05 — Border Radius</p>
+        <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 32px; margin: 12px 0 24px; color: #0E3452;">Cantos suaves</h2>
+        <sc-for list="{{ radius }}" as="r" hint-placeholder-count="6">
+          <div style="display: flex; gap: 20px; align-items: center; padding: 12px 0; border-bottom: 1px solid #E9E4DB; font-size: 14px;">
+            <div style="width: 56px; height: 40px; background: #FFFFFF; border: 1.5px solid #0E3452; border-radius: {{ r.px }}px; flex-shrink: 0;"></div>
+            <div style="font-family: monospace; font-size: 13px; color: #0E3452; width: 120px;">{{ r.token }}</div>
+            <div style="color: #44505A;">{{ r.use }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div>
+        <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">06 — Shadows</p>
+        <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 32px; margin: 12px 0 24px; color: #0E3452;">Elevação tingida de navy</h2>
+        <sc-for list="{{ shadows }}" as="sh" hint-placeholder-count="5">
+          <div style="display: flex; gap: 20px; align-items: center; padding: 12px 0; font-size: 14px;">
+            <div style="width: 56px; height: 40px; background: #FFFFFF; border-radius: 12px; box-shadow: {{ sh.css }}; flex-shrink: 0;"></div>
+            <div style="font-family: monospace; font-size: 13px; color: #0E3452; width: 90px;">{{ sh.token }}</div>
+            <div style="color: #44505A; font-size: 13px;">{{ sh.use }}</div>
+          </div>
+        </sc-for>
+        <p style="font-size: 13px; color: #6B7680; margin-top: 16px;">Todas usam <span style="font-family: monospace;">rgba(14,52,82, α)</span> — nunca preto puro, para manter o calor da página.</p>
+      </div>
+    </section>
+
+    <!-- 7. GRID -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">07 — Grid & Breakpoints</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 24px; color: #0E3452;">Uma coluna, sempre centrada</h2>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <sc-for list="{{ grid }}" as="g" hint-placeholder-count="3">
+          <div style="background: #FFFFFF; border: 1px solid #E9E4DB; border-radius: 16px; padding: 28px;">
+            <p style="margin: 0; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #6B7680;">{{ g.device }}</p>
+            <p style="margin: 6px 0 16px; font-family: 'Prata', serif; font-size: 24px; color: #0E3452;">{{ g.bp }}</p>
+            <div style="font-size: 14px; color: #44505A; display: grid; gap: 6px;">
+              <div>Container: <strong style="font-weight: 500; color: #0E3452;">{{ g.container }}</strong></div>
+              <div>Margens: <strong style="font-weight: 500; color: #0E3452;">{{ g.margin }}</strong></div>
+              <div>Colunas: <strong style="font-weight: 500; color: #0E3452;">{{ g.cols }}</strong></div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <p style="font-size: 14px; color: #44505A; max-width: 680px; margin: 24px 0 0;">A página de links é uma coluna única de <strong style="font-weight: 500;">máx. 560px</strong> em todos os breakpoints — o container maior (site institucional) existe apenas para páginas futuras. Gutter padrão: 24px.</p>
+    </section>
+
+    <!-- 8. COMPONENTES -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">08 — Componentes</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 8px; color: #0E3452;">Especificações</h2>
+      <p style="font-size: 16px; font-weight: 300; max-width: 680px; margin: 0 0 32px;">Todos os cards clicáveis derivam de uma única anatomia-base (Card de Link) com variações de conteúdo — isso garante consistência e facilita a implementação. Estados universais: <strong style="font-weight: 500;">hover</strong> eleva 2px + shadow MD (200ms), <strong style="font-weight: 500;">active</strong> volta a 0 + scale 0.99, <strong style="font-weight: 500;">disabled</strong> opacidade 40% sem eventos, <strong style="font-weight: 500;">focus</strong> anel 2px navy com offset 2px.</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <sc-for list="{{ components }}" as="cp" hint-placeholder-count="10">
+          <div style="background: #FFFFFF; border: 1px solid #E9E4DB; border-radius: 16px; padding: 24px 28px;">
+            <p style="margin: 0 0 10px; font-family: 'Prata', serif; font-size: 20px; color: #0E3452;">{{ cp.name }}</p>
+            <div style="font-size: 13.5px; color: #44505A; display: grid; gap: 5px;">
+              <div><strong style="font-weight: 500; color: #0E3452;">Estrutura:</strong> {{ cp.structure }}</div>
+              <div><strong style="font-weight: 500; color: #0E3452;">Dimensões:</strong> {{ cp.size }}</div>
+              <div><strong style="font-weight: 500; color: #0E3452;">Estados:</strong> {{ cp.states }}</div>
+              <div><strong style="font-weight: 500; color: #0E3452;">Animação:</strong> {{ cp.anim }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- 9. ÍCONES -->
+    <section style="padding-top: 96px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px;">
+      <div>
+        <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">09 — Ícones</p>
+        <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 32px; margin: 12px 0 16px; color: #0E3452;">Lucide</h2>
+        <p style="font-size: 15px; color: #44505A; margin: 0 0 16px; text-wrap: pretty;"><strong style="font-weight: 500;">Lucide</strong> é a escolha: traço fino (stroke 1.5px), geometria calma e cobertura completa — combina com a Jost e com o gesto linear da assinatura. Phosphor (thin) é a alternativa aceitável; Heroicons é denso demais para o tom da marca.</p>
+        <div style="font-size: 14px; color: #44505A; display: grid; gap: 6px;">
+          <div>Tamanhos: <span style="font-family: monospace; font-size: 13px;">16 / 20 / 24px</span> · stroke <span style="font-family: monospace; font-size: 13px;">1.5px</span></div>
+          <div>Cor padrão: Text Secondary · em cards: Primary</div>
+          <div>Nunca preencher (sempre outline) · nunca dois estilos juntos</div>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">10 — Fotografias</p>
+        <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 32px; margin: 12px 0 16px; color: #0E3452;">Direção de arte</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+          <img src="assets/foto-1.jpeg" alt="Beatriz — retrato linho" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 16px;">
+          <img src="assets/foto-2.jpeg" alt="Beatriz — retrato pedra" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 16px;">
+        </div>
+        <div style="font-size: 14px; color: #44505A; display: grid; gap: 6px;">
+          <div><strong style="font-weight: 500; color: #0E3452;">Tratamento:</strong> luz natural, tons quentes, leve dessaturação (−8%); nunca filtros frios ou HDR.</div>
+          <div><strong style="font-weight: 500; color: #0E3452;">Proporções:</strong> retrato 4:5 · avatar 1:1 circular · hero 3:4.</div>
+          <div><strong style="font-weight: 500; color: #0E3452;">Máscaras:</strong> círculo (avatar) e retângulo radius LG; sem molduras duplas ou bordas decorativas.</div>
+          <div><strong style="font-weight: 500; color: #0E3452;">Recorte:</strong> olhos no terço superior; respiro acima da cabeça; mãos visíveis quando possível (acolhimento).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. ANIMAÇÕES -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">11 — Animações</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 8px; color: #0E3452;">Movimento que respira</h2>
+      <p style="font-size: 16px; font-weight: 300; max-width: 640px; margin: 0 0 28px;">Tudo lento, curto e sutil. Uma única curva para o sistema inteiro: <span style="font-family: monospace; font-size: 14px;">cubic-bezier(0.25, 0.1, 0.25, 1)</span> ("ease calmo"). Nada pisca, nada salta, nada gira.</p>
+      <sc-for list="{{ motion }}" as="m" hint-placeholder-count="5">
+        <div style="display: grid; grid-template-columns: 160px 130px 1fr; gap: 20px; padding: 12px 0; border-bottom: 1px solid #E9E4DB; font-size: 14px;">
+          <div style="font-weight: 500; color: #0E3452;">{{ m.name }}</div>
+          <div style="font-family: monospace; font-size: 13px; color: #6B7680;">{{ m.dur }}</div>
+          <div style="color: #44505A;">{{ m.spec }}</div>
+        </div>
+      </sc-for>
+    </section>
+
+    <!-- 12. TOKENS -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">12 — Design Tokens</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 24px; color: #0E3452;">Nomenclatura</h2>
+      <div style="background: #0E3452; border-radius: 16px; padding: 32px 36px; color: #DCE5EC; font-family: monospace; font-size: 13.5px; line-height: 2; overflow-x: auto;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px 48px; white-space: nowrap;">
+          <div>color.primary — #0E3452</div><div>color.text.primary — #1F2A33</div>
+          <div>color.primary.dark — #092539</div><div>color.text.secondary — #44505A</div>
+          <div>color.secondary — #C2A878</div><div>color.text.tertiary — #6B7680</div>
+          <div>color.neutral — #D1CCC6</div><div>color.text.inverse — #FAF8F4</div>
+          <div>color.background — #FAF8F4</div><div>color.overlay — rgba(14,52,82,.48)</div>
+          <div>color.surface — #FFFFFF</div><div>font.display — Prata 400</div>
+          <div>color.surface.tint — #DCE5EC</div><div>font.body — Jost 300–500</div>
+          <div>color.border — #E9E4DB</div><div>spacing.4…96 — escala de 4px</div>
+          <div>color.success — #5E7D5A</div><div>radius.xs…full — 4/8/12/16/24/999</div>
+          <div>color.warning — #B08A3E</div><div>shadow.xs…xl — navy-tinted</div>
+          <div>color.error — #9C4A3C</div><div>motion.ease — cubic-bezier(.25,.1,.25,1)</div>
+          <div></div><div>motion.fast/base/slow — 150/200/300ms</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. ACESSIBILIDADE -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">13 — Acessibilidade</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 24px; color: #0E3452;">WCAG 2.2 AA</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px 48px; font-size: 15px; color: #44505A;">
+        <div><strong style="font-weight: 500; color: #0E3452;">Contraste:</strong> navy #0E3452 sobre #FAF8F4 = 11.9:1 (AAA). Text Secondary 7.0:1. Dourado #C2A878 nunca carrega texto pequeno — apenas detalhes ≥ 3:1 decorativos.</div>
+        <div><strong style="font-weight: 500; color: #0E3452;">Tamanho mínimo:</strong> corpo 16px; nada abaixo de 12px (e 12px só em caption caixa-alta espaçada).</div>
+        <div><strong style="font-weight: 500; color: #0E3452;">Área clicável:</strong> mínimo 44×44px; cards de link inteiros são o alvo, não apenas o texto.</div>
+        <div><strong style="font-weight: 500; color: #0E3452;">Foco:</strong> anel visível 2px navy, offset 2px, nunca removido; ordem de tabulação segue a ordem visual.</div>
+        <div><strong style="font-weight: 500; color: #0E3452;">Movimento:</strong> respeitar <span style="font-family: monospace; font-size: 13px;">prefers-reduced-motion</span> — reveals viram fade simples.</div>
+        <div><strong style="font-weight: 500; color: #0E3452;">Semântica:</strong> um H1 por página; links descritivos ("Agendar consulta", nunca "clique aqui"); alt em todas as fotos.</div>
+      </div>
+    </section>
+
+    <!-- 14. MOODBOARD -->
+    <section style="padding-top: 96px;">
+      <p style="font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C2A878; margin: 0;">14 — Moodboard</p>
+      <h2 style="font-family: 'Prata', serif; font-weight: 400; font-size: 40px; margin: 12px 0 24px; color: #0E3452;">Clima visual</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+        <p style="font-size: 17px; font-weight: 300; margin: 0; text-wrap: pretty; color: #44505A;">Um consultório de manhã: linho branco, madeira clara, pedra quente, um objeto de latão. Sobre essa base neutra, o navy aparece como tinta — profundo, estável, poucas vezes. A sensação-alvo ao abrir a página: <em>respirar fundo</em>. Referências de linguagem: a contenção da Apple, a precisão do Linear, o calor editorial da Kinfolk. Se algum elemento parecer "template de bio", ele está errado.</p>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+          <div style="aspect-ratio: 1; border-radius: 12px; background: #0E3452;"></div>
+          <div style="aspect-ratio: 1; border-radius: 12px; background: #FAF8F4; border: 1px solid #E9E4DB;"></div>
+          <div style="aspect-ratio: 1; border-radius: 12px; background: #D1CCC6;"></div>
+          <div style="aspect-ratio: 1; border-radius: 12px; background: #C2A878;"></div>
+          <img src="assets/foto-2.jpeg" alt="" style="grid-column: span 2; aspect-ratio: 2/1; width: 100%; object-fit: cover; border-radius: 12px;">
+          <img src="assets/logo-mark.jpeg" alt="" style="aspect-ratio: 1; width: 100%; object-fit: cover; border-radius: 12px;">
+          <div style="aspect-ratio: 1; border-radius: 12px; background: #DCE5EC;"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer style="border-top: 1px solid #E9E4DB; padding: 32px; text-align: center; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #6B7680;">Beatriz Machado · Design System v1.0 · 2026</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      colors: [
+        { name: 'Primary', hex: '#0E3452', rgb: 'rgb(14, 52, 82)', use: 'Títulos, botões primários, footer, monograma. A cor da marca.' },
+        { name: 'Primary Dark', hex: '#092539', rgb: 'rgb(9, 37, 57)', use: 'Hover de botões primários, fundos imersivos.' },
+        { name: 'Secondary', hex: '#C2A878', rgb: 'rgb(194, 168, 120)', use: 'Acento dourado: eyebrows, detalhes, ícones pontuais. Nunca em texto pequeno.' },
+        { name: 'Neutral', hex: '#D1CCC6', rgb: 'rgb(209, 204, 198)', use: 'Tom de linho (das fotos): separadores fortes, placeholders de imagem.' },
+        { name: 'Background', hex: '#FAF8F4', rgb: 'rgb(250, 248, 244)', use: 'Fundo global da página — branco quente, nunca branco puro.' },
+        { name: 'Surface', hex: '#FFFFFF', rgb: 'rgb(255, 255, 255)', use: 'Cards e superfícies elevadas sobre o background.' },
+        { name: 'Surface Tint', hex: '#DCE5EC', rgb: 'rgb(220, 229, 236)', use: 'Navy a 12%: badges, fundos de tag, hover de itens de lista.' },
+        { name: 'Border', hex: '#E9E4DB', rgb: 'rgb(233, 228, 219)', use: 'Bordas de 1px em cards, inputs e separadores.' },
+        { name: 'Success', hex: '#5E7D5A', rgb: 'rgb(94, 125, 90)', use: 'Confirmações (agendamento enviado). Verde-sálvia, discreto.' },
+        { name: 'Warning', hex: '#B08A3E', rgb: 'rgb(176, 138, 62)', use: 'Avisos suaves (poucas vagas). Deriva do dourado.' },
+        { name: 'Error', hex: '#9C4A3C', rgb: 'rgb(156, 74, 60)', use: 'Erros de formulário. Terracota, nunca vermelho vivo.' },
+        { name: 'Text Primary', hex: '#1F2A33', rgb: 'rgb(31, 42, 51)', use: 'Corpo de texto sobre fundos claros.' },
+        { name: 'Text Secondary', hex: '#44505A', rgb: 'rgb(68, 80, 90)', use: 'Descrições, subtítulos, texto de apoio.' },
+        { name: 'Text Tertiary', hex: '#6B7680', rgb: 'rgb(107, 118, 128)', use: 'Captions, metadados, placeholders de input.' },
+        { name: 'Overlay', hex: '#0E3452 · 48%', rgb: 'rgba(14, 52, 82, 0.48)', use: 'Véu sobre fotos em cards com texto sobreposto e modais.' },
+      ],
+      type: [
+        { role: 'Display', family: "'Prata', serif", px: 48, weight: 400, lh: 1.15, ls: '0.01em', tt: 'none', sample: 'Beatriz Machado', spec: 'Prata 400 · 48/56 · +1% · hero e aberturas' },
+        { role: 'Heading', family: "'Prata', serif", px: 32, weight: 400, lh: 1.2, ls: '0.01em', tt: 'none', sample: 'Um espaço para respirar', spec: 'Prata 400 · 32/40 · +1% · títulos de seção' },
+        { role: 'Title', family: "'Jost', sans-serif", px: 20, weight: 500, lh: 1.35, ls: '0.02em', tt: 'none', sample: 'Agende sua consulta', spec: 'Jost 500 · 20/27 · +2% · títulos de card' },
+        { role: 'Body', family: "'Jost', sans-serif", px: 16, weight: 400, lh: 1.6, ls: '0.01em', tt: 'none', sample: 'Psicoterapia individual para adultos, online e presencial.', spec: 'Jost 400 · 16/26 · +1% · texto corrente' },
+        { role: 'Small', family: "'Jost', sans-serif", px: 14, weight: 400, lh: 1.5, ls: '0.01em', tt: 'none', sample: 'Atendimento de segunda a sexta, das 8h às 19h.', spec: 'Jost 400 · 14/21 · +1% · apoio e descrições' },
+        { role: 'Caption', family: "'Jost', sans-serif", px: 12, weight: 400, lh: 1.4, ls: '0.25em', tt: 'uppercase', sample: 'CRP 09/16582', spec: 'Jost 400 · 12/17 · +25% · caixa-alta · metadados' },
+        { role: 'Button', family: "'Jost', sans-serif", px: 15, weight: 500, lh: 1, ls: '0.08em', tt: 'uppercase', sample: 'Agendar consulta', spec: 'Jost 500 · 15 · +8% · caixa-alta · CTAs' },
+      ],
+      spacing: [
+        { token: 'space.4', px: 4, use: 'Gap ícone–texto, ajustes finos.' },
+        { token: 'space.8', px: 8, use: 'Gap interno de badges e tags.' },
+        { token: 'space.12', px: 12, use: 'Gap entre elementos de um mesmo grupo (título + descrição).' },
+        { token: 'space.16', px: 16, use: 'Padding de inputs e botões; gap entre cards da lista de links.' },
+        { token: 'space.24', px: 24, use: 'Padding interno de cards; margens laterais mobile.' },
+        { token: 'space.32', px: 32, use: 'Padding de cards grandes; separação título–conteúdo.' },
+        { token: 'space.48', px: 48, use: 'Separação entre grupos de links (com separador).' },
+        { token: 'space.64', px: 64, use: 'Separação entre seções da página.' },
+        { token: 'space.96', px: 96, use: 'Respiro de abertura/fechamento de página (hero, footer).' },
+      ],
+      radius: [
+        { token: 'radius.xs', px: 4, use: 'Badges pequenos, detalhes.' },
+        { token: 'radius.sm', px: 8, use: 'Tags, swatches, inputs compactos.' },
+        { token: 'radius.md', px: 12, use: 'Botões, inputs, thumbnails.' },
+        { token: 'radius.lg', px: 16, use: 'Cards de link e de conteúdo (o radius do sistema).' },
+        { token: 'radius.xl', px: 24, use: 'Cards hero, modais, imagens grandes.' },
+        { token: 'radius.full', px: 999, use: 'Avatar, social buttons, floating button, pills.' },
+      ],
+      shadows: [
+        { token: 'shadow.xs', css: '0 1px 2px rgba(14,52,82,0.05)', use: 'Inputs, elementos em repouso.' },
+        { token: 'shadow.sm', css: '0 2px 8px rgba(14,52,82,0.06)', use: 'Cards em repouso.' },
+        { token: 'shadow.md', css: '0 6px 20px rgba(14,52,82,0.10)', use: 'Cards em hover, dropdowns.' },
+        { token: 'shadow.lg', css: '0 12px 32px rgba(14,52,82,0.14)', use: 'Modais, floating button.' },
+        { token: 'shadow.xl', css: '0 24px 56px rgba(14,52,82,0.18)', use: 'Overlays de destaque (raro).' },
+      ],
+      grid: [
+        { device: 'Mobile', bp: '< 768px', container: '100% − 48px', margin: '24px', cols: '1 (fluida)' },
+        { device: 'Tablet', bp: '768 – 1119px', container: '560px', margin: '32px', cols: '1 centrada' },
+        { device: 'Desktop', bp: '≥ 1120px', container: '560px (links) / 1040px (site)', margin: '48px', cols: '1 centrada / 12' },
+      ],
+      components: [
+        { name: 'Botão Primário', structure: 'Label caixa-alta, opcional ícone 16px à direita', size: 'Altura 52px · padding 16/32 · radius.md · largura total no mobile', states: 'Hover: Primary Dark + elevação 1px · Active: scale 0.99 · Disabled: 40%', anim: 'background 200ms ease calmo' },
+        { name: 'Botão Secundário / Ghost', structure: 'Label navy, borda 1.5px navy, fundo transparente', size: 'Altura 52px · padding 16/32 · radius.md', states: 'Hover: fundo Surface Tint · Active: borda Primary Dark', anim: 'background 200ms' },
+        { name: 'Card de Link (base)', structure: 'Surface + borda Border; ícone 24px ou thumb 56px + Title + Small + chevron', size: 'Largura 100% · min-height 76px · padding 20/24 · radius.lg · gap 16', states: 'Hover: −2px translateY + shadow.md + chevron desliza 4px · Active: retorna · Focus: anel navy', anim: 'transform/shadow 200ms ease calmo' },
+        { name: 'Card de Destaque (CTA)', structure: 'Variante navy do card-base: fundo Primary, texto claro, eyebrow dourado', size: 'Padding 28/28 · radius.lg · 1 por página, no topo da lista', states: 'Hover: Primary Dark + shadow.lg', anim: 'idem card-base' },
+        { name: 'Card de WhatsApp / Agendamento', structure: 'Card-base com ícone Lucide (message-circle / calendar) em disco Surface Tint 44px + Title + Small com horário', size: 'Anatomia do card-base', states: 'Universais; ícone ganha fundo dourado 16% no hover', anim: 'idem card-base' },
+        { name: 'Cards de Conteúdo (Ebook · Podcast · Vídeo · Instagram)', structure: 'Card-base com thumbnail 4:3 de 72px radius.md à esquerda + badge do tipo ("EBOOK") + Title + Small', size: 'Padding 16 · radius.lg · thumb 96×72', states: 'Universais; thumb escurece 8% no hover', anim: 'idem + imagem scale 1.03 em 400ms' },
+        { name: 'Card de Localização / Contato', structure: 'Card-base com ícone map-pin/phone + endereço em Small + link "Como chegar"', size: 'Anatomia do card-base', states: 'Universais', anim: 'idem card-base' },
+        { name: 'Card de Atendimento', structure: 'Card informativo (não clicável): Title + lista de modalidades com ícones 16px + tags', size: 'Padding 24/28 · radius.lg · sem chevron', states: 'Sem hover de elevação (não é link)', anim: 'apenas scroll-reveal' },
+        { name: 'Avatar / Imagem de perfil', structure: 'Foto 1:1 circular; anel de 3px Background + 1px Border', size: '96px (mobile) / 112px (desktop); centrado no topo', states: '—', anim: 'fade + scale 0.96→1 na entrada' },
+        { name: 'Header (página de links)', structure: 'Avatar + nome (Heading) + Caption CRP + bio de 1 linha (Small) + social buttons', size: 'Empilhado, centrado, gap 12, padding-top space.96', states: '—', anim: 'reveal em cascata 80ms de stagger' },
+        { name: 'Social Buttons', structure: 'Linha de discos com ícones Lucide 20px (Instagram, WhatsApp, e-mail)', size: 'Disco 44px · radius.full · borda 1px Border · gap 12', states: 'Hover: fundo navy, ícone claro · Focus: anel', anim: 'colors 200ms' },
+        { name: 'Badge & Tag', structure: 'Badge: Caption sobre Surface Tint. Tag: Small 13px com borda', size: 'Badge: padding 4/10, radius.xs · Tag: padding 6/14, radius.full', states: 'Estáticos (não clicáveis)', anim: '—' },
+        { name: 'Input', structure: 'Label Small acima + campo com placeholder Text Tertiary', size: 'Altura 52px · padding 16 · radius.md · borda 1px Border', states: 'Focus: borda navy + anel Surface Tint · Error: borda Error + mensagem 13px', anim: 'border-color 150ms' },
+        { name: 'Link de texto', structure: 'Navy, sem sublinhado; sublinhado 1px surge no hover', size: 'Herda o tamanho do contexto', states: 'Hover: sublinhado + dourado · Visited: igual', anim: 'text-decoration-color 150ms' },
+        { name: 'Separador', structure: 'Linha 1px Border, ou variante com monograma "Bm" 20px centrado', size: 'Largura 64px centrada (curta) ou 100% (seções)', states: '—', anim: '—' },
+        { name: 'Floating Button (WhatsApp)', structure: 'Disco navy com ícone message-circle 24px claro', size: '56px · radius.full · shadow.lg · fixo 24px do canto inferior direito', states: 'Hover: Primary Dark + scale 1.05 · aparece após 400px de scroll', anim: 'entrada fade+scale 300ms' },
+        { name: 'Footer', structure: 'Separador + monograma 32px + Caption (nome, CRP) + links legais em Small', size: 'Padding 48/24 · centrado · gap 12', states: 'Links com hover padrão', anim: '—' },
+      ],
+      motion: [
+        { name: 'Hover (cards/botões)', dur: '200ms', spec: 'translateY −2px + shadow sm→md; nunca scale acima de 1.03.' },
+        { name: 'Fade', dur: '300ms', spec: 'opacity 0→1 para trocas de conteúdo e imagens carregando.' },
+        { name: 'Scale de entrada', dur: '300ms', spec: '0.96→1 combinado ao fade; apenas em avatar e modais.' },
+        { name: 'Scroll Reveal', dur: '500ms', spec: 'fade + translateY 16px→0, stagger de 80ms entre cards; dispara a 15% do viewport, uma única vez.' },
+        { name: 'Transições de cor', dur: '150–200ms', spec: 'background, border e text-decoration; nunca animar layout (width/height).' },
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
