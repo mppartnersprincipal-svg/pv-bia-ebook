@@ -1,0 +1,33 @@
+PÁGINAS DO E-BOOK — seção "Veja por dentro"
+
+Coloque nesta pasta as imagens reais das páginas do e-book "Mais perto de você",
+com exatamente estes nomes:
+
+  capa.webp            Capa do e-book
+  dia-1.webp           Dia 1 — "Do rótulo para a cena"
+  dia-2-tabela.webp    Tabela do Dia 2
+  dia-7-mapa.webp      Mapa Pessoal do Dia 7
+
+Formato recomendado
+  - Retrato, proporção ~3:4 (ex.: 1200 × 1600 px ou 600 × 800 px).
+    A página é exibida em moldura 3:4; outras proporções são recortadas.
+  - WebP (aceita também .jpg, .png ou .avif), de preferência até ~150 KB cada.
+  - Use somente páginas reais do material. Não inclua respostas pessoais de leitoras.
+
+Como ativar
+  Em deploy/mais-perto-de-voce/config.js, preencha EBOOK_PREVIEW_IMAGES:
+
+    EBOOK_PREVIEW_IMAGES: Object.freeze({
+      capa: 'assets/ebook/capa.webp',
+      'dia-1': 'assets/ebook/dia-1.webp',
+      'dia-2-tabela': 'assets/ebook/dia-2-tabela.webp',
+      'dia-7-mapa': 'assets/ebook/dia-7-mapa.webp'
+    }),
+
+  Cada slot com caminho preenchido troca a moldura pela imagem quando ela carrega,
+  com texto alternativo já definido no HTML (atributo data-alt). Slot vazio ou arquivo
+  ausente continua mostrando a moldura da página — nenhum texto "em breve" aparece.
+
+  Alternativa sem JavaScript: em index.html, na seção "Veja por dentro", substitua o
+  <div class="ebook-page-placeholder">…</div> de cada slot por
+  <img src="assets/ebook/capa.webp" width="600" height="800" loading="lazy" decoding="async" alt="…">.

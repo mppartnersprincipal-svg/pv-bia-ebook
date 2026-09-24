@@ -1,0 +1,212 @@
+# Copy da Página de Vendas — "Mais perto de você"
+**Beatriz Machado · Psicóloga Clínica · CRP 09/16582**
+Estrutura: 12 blocos · Preço: R$37,90 · Garantia: 7 dias
+
+<!-- Regras: não alterar o texto. Sem contador, sem escassez falsa, sem preço "de/por" e sem depoimentos inventados. Todos os botões apontam para CHECKOUT_URL. -->
+
+---
+
+## 01 · BARRA DE TOPO (opcional)
+
+Acesso imediato · Experiência de 7 dias · R$37,90 · Garantia de 7 dias
+
+---
+
+## 02 · CABEÇA (headline + VSL + CTA)
+
+# Você sabe que não deveria reagir daquele jeito. Mas, na hora, reage.
+
+Em 7 dias, 10 a 15 minutos por dia, você vai entender o que acontece com você numa situação que se repete e construir uma primeira resposta diferente. Uma experiência guiada criada por uma psicóloga clínica.
+
+<!-- MINI VSL aqui (VSL_URL) -->
+
+**[BOTÃO] QUERO COMEÇAR OS 7 DIAS**
+
+Acesso imediato · PDF de 28 páginas · Garantia de 7 dias
+
+---
+
+## 03 · IDENTIFICAÇÃO
+
+## É pra você que…
+
+…se irrita, responde de um jeito que não queria e, minutos depois, pensa: *"por que eu fiz isso de novo?"*
+
+…relê uma conversa várias vezes tentando descobrir o que a outra pessoa realmente quis dizer.
+
+…sabe o que seria melhor fazer, mas na hora simplesmente não consegue.
+
+…vê uma situação pequena ganhar um peso enorme dentro de você, enquanto os outros seguem normalmente.
+
+…repete comportamentos mesmo sabendo que eles não te fazem bem.
+
+E no fim sempre chega à mesma conclusão: *"eu sou ansiosa"*, *"eu sou exagerada"*, *"eu complico tudo"*, *"eu sou assim"*.
+
+---
+
+## 04 · MECANISMO
+
+## Você não está quebrada.
+
+Um rótulo não explica o que aconteceu. Ele só coloca um nome grande em cima de algo que você ainda não teve a chance de observar direito.
+
+Entre o que acontece e a forma como você reage, existe um processo: o que sua mente interpretou, o que você sentiu, o que percebeu no corpo, a vontade de agir e as condições em que aquilo encontrou você.
+
+Quando tudo isso vem misturado, a reação parece surgir do nada. Quando as partes ficam visíveis, você ganha informação. **E informação cria espaço para escolha.**
+
+> ### Uma situação. Sete lentes.
+> Você escolhe uma única situação real da sua vida e, a cada dia, olha para ela por uma perspectiva nova. Não é teoria solta: é um percurso com começo, meio e fim, baseado na Terapia Cognitivo-Comportamental.
+
+---
+
+## 05 · PROVA
+
+## Veja por dentro
+
+<!-- Galeria com 3 a 4 páginas reais do ebook: capa, Dia 1 ("Do rótulo para a cena"), tabela do Dia 2 e Mapa Pessoal do Dia 7. Imagens na pasta Fotos e Logos/. -->
+
+Não é um texto para ler e esquecer. Cada dia tem perguntas guiadas, espaços para escrever e um exercício aplicado à sua situação.
+
+<!-- Foto da Bia -->
+
+### Criado por Beatriz Machado
+**Psicóloga Clínica · CRP 09/16582**
+
+No consultório, acompanho pessoas que desejam compreender com mais profundidade seus padrões, emoções e formas de responder à própria vida. Criei este material para traduzir uma parte desse olhar clínico em perguntas acessíveis, sem confundir auto-observação com terapia.
+
+**Feito com responsabilidade clínica:** orientações de segurança, respeito à sua privacidade e clareza, desde a primeira página, sobre o que o material é e o que ele não é.
+
+<!-- Depoimentos: controlado pela flag SHOW_TESTIMONIALS = false. Só entra com depoimentos reais das leitoras-beta. -->
+
+---
+
+## 06 · BENEFÍCIOS
+
+## Ao final dos 7 dias, você vai:
+
+- Trocar o *"eu sou assim"* por uma cena concreta, que dá para entender.
+- Perceber o que passa pela sua cabeça segundos antes de reagir.
+- Separar o que aconteceu de fato da história que a sua mente contou.
+- Reconhecer o que intensifica suas reações: cansaço, sobrecarga, contexto, momento do mês.
+- Entender o que a emoção está pedindo, sem obedecer ao primeiro impulso.
+- Criar um pequeno espaço entre sentir e agir.
+- Sair com um mapa claro do que acontece com você e uma primeira resposta diferente para experimentar.
+
+---
+
+## 07 · EMPILHAMENTO DE VALOR
+
+## Tudo o que você recebe:
+
+### 📘 A experiência guiada de 7 dias
+Uma lente por dia:
+- **Dia 1:** do rótulo para a cena
+- **Dia 2:** o que acontece dentro de você
+- **Dia 3:** fato ou história da mente
+- **Dia 4:** o que intensifica sua reação
+- **Dia 5:** emoção, impulso e necessidade
+- **Dia 6:** reagir ou responder
+- **Dia 7:** o seu mapa
+
+### ✨ As Dicas de Ouro
+Um pouco do olhar clínico, traduzido em perguntas que você consegue fazer para si mesma.
+
+### 🧭 Os Quatro Movimentos
+Perceber, nomear, localizar, escolher. Uma ferramenta curta para usar na vida real, no momento em que a reação aparece.
+
+### 🗺️ O seu Mapa Pessoal
+Um retrato do que acontece com você nessa situação, para guardar e revisitar sempre que precisar.
+
+### 🔬 O Experimento para a vida real
+Um plano pequeno para testar sua nova resposta nos 7 dias seguintes.
+
+*PDF de 28 páginas com espaços para escrever · Use no celular, no computador ou impresso*
+
+**[BOTÃO] QUERO COMEÇAR OS 7 DIAS**
+
+---
+
+## 08 · OFERTA
+
+## Comece hoje o seu Mais perto de você
+
+Experiência de 7 dias + Dicas de Ouro + Quatro Movimentos + Mapa Pessoal + Experimento para a vida real
+
+# R$37,90
+**Menos de R$6 por dia de experiência.**
+Pagamento único · Acesso imediato
+
+**[BOTÃO] QUERO COMEÇAR OS 7 DIAS**
+
+Compra segura · Acesso imediato · Garantia de 7 dias
+
+---
+
+## 09 · RECAPITULAÇÃO (opcional)
+
+## Não leu tudo? Eu resumo pra você.
+
+O *Mais perto de você* é uma experiência de 7 dias, de 10 a 15 minutos por dia, para você entender o que acontece com você numa situação que se repete e parar de se definir por um rótulo. Criado por uma psicóloga clínica, por R$37,90, com garantia de 7 dias.
+
+---
+
+## 10 · GARANTIA
+
+<!-- Selo de 7 dias -->
+
+## Garantia de 7 dias
+
+Faça o primeiro dia, leia o material com calma. Se dentro de 7 dias você sentir que ele não é para você, basta pedir o reembolso e devolvemos 100% do valor. Sem perguntas e sem constrangimento. O risco fica comigo.
+
+---
+
+## 11 · FAQ
+
+## Perguntas frequentes
+
+**Isso é terapia?**
+Não. É um material educativo de auto-observação, criado por uma psicóloga. Ele não faz diagnóstico e não substitui acompanhamento psicológico.
+
+**Preciso já ter feito terapia?**
+Não. Foi pensado tanto para quem nunca fez quanto para quem já faz.
+
+**E se eu não conseguir fazer todos os dias?**
+Tudo bem. Você retoma do ponto em que parou. Perder um dia não é prova de nada; é só uma pausa.
+
+**É pra mim se eu estiver passando por um momento muito difícil?**
+Se você está vivendo um sofrimento intenso, uma crise ou quer investigar uma experiência traumática, o cuidado certo é o acompanhamento profissional, não um material. O próprio e-book traz essa orientação.
+
+**Quando eu recebo?**
+Assim que o pagamento é aprovado, o acesso ao PDF chega no seu e-mail.
+
+**Consigo fazer pelo celular?**
+Consegue. Você também pode imprimir ou usar um caderno para as respostas.
+
+**Minhas respostas ficam com alguém?**
+Não. Tudo o que você escreve fica só com você.
+
+**O pagamento é seguro?**
+Sim. A compra é feita por uma plataforma de pagamento segura, e você recebe a confirmação no seu e-mail.
+
+---
+
+## 12 · CTA FINAL E RODAPÉ
+
+Talvez se conhecer não comece encontrando uma resposta definitiva.
+**Talvez comece aprendendo a fazer perguntas melhores.**
+
+**[BOTÃO] TIREI MINHAS DÚVIDAS, QUERO COMEÇAR**
+
+Compra segura · Garantia de 7 dias
+
+---
+
+**Rodapé**
+
+Este material tem finalidade educativa e não substitui avaliação, diagnóstico ou acompanhamento psicológico individualizado.
+
+Beatriz Machado · Psicóloga Clínica · CRP 09/16582
+
+© 2026 Beatriz Machado. Todos os direitos reservados. · Termos de uso · Política de privacidade
+
+Este site não é afiliado ao Facebook ou à Meta.
