@@ -13,6 +13,7 @@ Atualizada em **24/09/2026**. Resumo de continuidade para Codex e Claude; detalh
 
 - Copy literal de `Ebook/Copy Página de Vendas - Ebook Bia.txt` (nova versão). CTAs: "QUERO COMEÇAR OS 7 DIAS" (topo, empilhamento, oferta, barra fixa) e "TIREI MINHAS DÚVIDAS, QUERO COMEÇAR" (final). O antigo "— R$37,90" nos botões **foi removido** pela nova copy.
 - Rodapé: aviso educativo, identificação, © 2026, Termos, Privacidade e "Este site não é afiliado ao Facebook ou à Meta.".
+- **Nunca dizer "PDF" ou "e-book" em texto visível** (transmite pouco valor): usar "guia prático"/"material prático" que acompanha dia a dia. Aplicado na copy .txt e na página em 24/09/2026.
 - "Psicóloga Clínica" (não "Integrativa"). Nada de depoimentos inventados, contadores, escassez ou preço de/por.
 - Só o design system da Bia: Prata 400 + Jost 400–500; navy `#0E3452` (hover `#092539`), creme `#FAF8F4`, branco, tint `#DCE5EC`, bordas `#E9E4DB`, textos `#1F2A33`/`#44505A`, dourado `#C2A878` decorativo (texto só sobre navy). Contraste AA.
 - Rótulos visuais adicionados pelo redesign (fora da copy, aguardam aprovação da cliente): eyebrows "Para quem é", "Como funciona", "O material", "Autoria", "Os 7 dias", "O que está incluído", "Dúvidas"; etiqueta "7 dias · 10 a 15 min por dia"; selo "GARANTIA DE 7 DIAS · 100% DO VALOR".

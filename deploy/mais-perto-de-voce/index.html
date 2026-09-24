@@ -33,6 +33,7 @@
     <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
     <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
     <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></symbol>
+    <symbol id="i-notebook" viewBox="0 0 24 24"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4M2 10h4M2 14h4M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></symbol>
     <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></symbol>
     <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
     <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
@@ -82,7 +83,7 @@
 
         <div class="hero-purchase">
           <a class="button button-primary button-xl" data-checkout role="button" aria-disabled="true" tabindex="-1"><span>QUERO COMEÇAR OS 7 DIAS</span><svg class="button-arrow" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <p class="purchase-note trust-note"><span class="trust-item"><svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-download"/></svg>Acesso imediato</span> <span class="trust-sep">·</span> <span class="trust-item"><svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-file"/></svg>PDF de 28 páginas</span> <span class="trust-sep">·</span> <span class="trust-item"><svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-shield"/></svg>Garantia de 7 dias</span></p>
+          <p class="purchase-note trust-note"><span class="trust-item"><svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-download"/></svg>Acesso imediato</span> <span class="trust-sep">·</span> <span class="trust-item"><svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-notebook"/></svg>Guia prático de 7 dias</span> <span class="trust-sep">·</span> <span class="trust-item"><svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-shield"/></svg>Garantia de 7 dias</span></p>
         </div>
       </div>
     </section>
@@ -140,27 +141,27 @@
           Alternativa sem JS: substitua o <div class="ebook-page-placeholder"> de cada slot por
           <img src="assets/ebook/capa.webp" width="600" height="800" loading="lazy" decoding="async" alt="…">.
         -->
-        <ul class="ebook-preview" aria-label="Páginas do e-book">
+        <ul class="ebook-preview" aria-label="Páginas do guia prático">
           <li data-reveal>
-            <figure class="ebook-page ebook-page-cover" data-ebook-page="capa" data-alt="Capa do e-book Mais perto de você, de Beatriz Machado">
+            <figure class="ebook-page ebook-page-cover" data-ebook-page="capa" data-alt="Capa do guia prático Mais perto de você, de Beatriz Machado">
               <div class="ebook-page-placeholder" aria-hidden="true"><span class="ebook-page-brand">Mais perto de você</span><span class="ebook-page-lines"></span><span class="ebook-page-label">Capa</span></div>
               <figcaption>Capa</figcaption>
             </figure>
           </li>
           <li data-reveal>
-            <figure class="ebook-page" data-ebook-page="dia-1" data-alt="Página do Dia 1 do e-book: Do rótulo para a cena">
+            <figure class="ebook-page" data-ebook-page="dia-1" data-alt="Página do Dia 1 do guia: Do rótulo para a cena">
               <div class="ebook-page-placeholder" aria-hidden="true"><span class="ebook-page-brand">Mais perto de você</span><span class="ebook-page-lines"></span><span class="ebook-page-label">Dia 1</span></div>
               <figcaption>Dia 1 · Do rótulo para a cena</figcaption>
             </figure>
           </li>
           <li data-reveal>
-            <figure class="ebook-page" data-ebook-page="dia-2-tabela" data-alt="Tabela do Dia 2 do e-book, com espaços para escrever">
+            <figure class="ebook-page" data-ebook-page="dia-2-tabela" data-alt="Tabela do Dia 2 do guia, com espaços para escrever">
               <div class="ebook-page-placeholder ebook-page-table" aria-hidden="true"><span class="ebook-page-brand">Mais perto de você</span><span class="ebook-page-lines"></span><span class="ebook-page-label">Dia 2</span></div>
               <figcaption>Dia 2 · Tabela</figcaption>
             </figure>
           </li>
           <li data-reveal>
-            <figure class="ebook-page" data-ebook-page="dia-7-mapa" data-alt="Mapa Pessoal do Dia 7 do e-book">
+            <figure class="ebook-page" data-ebook-page="dia-7-mapa" data-alt="Mapa Pessoal do Dia 7 do guia">
               <div class="ebook-page-placeholder ebook-page-map" aria-hidden="true"><span class="ebook-page-brand">Mais perto de você</span><span class="ebook-page-lines"></span><span class="ebook-page-label">Dia 7</span></div>
               <figcaption>Dia 7 · Mapa Pessoal</figcaption>
             </figure>
@@ -250,7 +251,7 @@
             <p>Um plano pequeno para testar sua nova resposta nos 7 dias seguintes.</p>
           </li>
         </ul>
-        <p class="value-stack-format"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#i-file"/></svg><em>PDF de 28 páginas com espaços para escrever · Use no celular, no computador ou impresso</em></p>
+        <p class="value-stack-format"><svg class="icon" width="18" height="18" aria-hidden="true"><use href="#i-notebook"/></svg><em>Guia prático para te acompanhar dia a dia, com espaços para escrever · Use no celular, no computador ou impresso</em></p>
         <a class="button button-primary button-xl" data-checkout role="button" aria-disabled="true" tabindex="-1"><span>QUERO COMEÇAR OS 7 DIAS</span><svg class="button-arrow" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
     </section>
@@ -322,8 +323,8 @@
           <details><summary>Isso é terapia?</summary><p>Não. É um material educativo de auto-observação, criado por uma psicóloga. Ele não faz diagnóstico e não substitui acompanhamento psicológico.</p></details>
           <details><summary>Preciso já ter feito terapia?</summary><p>Não. Foi pensado tanto para quem nunca fez quanto para quem já faz.</p></details>
           <details><summary>E se eu não conseguir fazer todos os dias?</summary><p>Tudo bem. Você retoma do ponto em que parou. Perder um dia não é prova de nada; é só uma pausa.</p></details>
-          <details><summary>É pra mim se eu estiver passando por um momento muito difícil?</summary><p>Se você está vivendo um sofrimento intenso, uma crise ou quer investigar uma experiência traumática, o cuidado certo é o acompanhamento profissional, não um material. O próprio e-book traz essa orientação.</p></details>
-          <details><summary>Quando eu recebo?</summary><p>Assim que o pagamento é aprovado, o acesso ao PDF chega no seu e-mail.</p></details>
+          <details><summary>É pra mim se eu estiver passando por um momento muito difícil?</summary><p>Se você está vivendo um sofrimento intenso, uma crise ou quer investigar uma experiência traumática, o cuidado certo é o acompanhamento profissional, não um material. O próprio guia traz essa orientação.</p></details>
+          <details><summary>Quando eu recebo?</summary><p>Assim que o pagamento é aprovado, o acesso ao seu guia prático chega no seu e-mail.</p></details>
           <details><summary>Consigo fazer pelo celular?</summary><p>Consegue. Você também pode imprimir ou usar um caderno para as respostas.</p></details>
           <details><summary>Minhas respostas ficam com alguém?</summary><p>Não. Tudo o que você escreve fica só com você.</p></details>
           <details><summary>O pagamento é seguro?</summary><p>Sim. A compra é feita por uma plataforma de pagamento segura, e você recebe a confirmação no seu e-mail.</p></details>
