@@ -5,9 +5,9 @@ Atualizada em **24/09/2026**. Resumo de continuidade para Codex e Claude; detalh
 ## Projeto e estágio atual
 
 - Página de vendas do e-book **Mais perto de você**, de **Beatriz Machado · Psicóloga Clínica · CRP 09/16582**.
-- Produto: **R$37,90**, PDF de 28 páginas, experiência guiada de 7 dias, 10–15 min/dia. Público: mulheres 18–34, celular via Meta Ads; objetivo: checkout.
+- Produto: **R$37,90**, material de 28 páginas (na página: "guia prático"), experiência guiada de 7 dias, 10–15 min/dia. Público: mulheres 18–34, celular via Meta Ads; objetivo: checkout.
 - Landing em `deploy/mais-perto-de-voce/` → rota `/mais-perto-de-voce/`. `deploy/index.html` é a página de links (preservada). HTML/CSS/JS puros, sem build. `vercel.json` publica `deploy/`.
-- **24/09/2026:** página reestruturada para a **nova copy de 12 blocos** e **redesign visual** completo (pedido da cliente: visual "simples e pouco chamativo"). Feito em sequência (copy → visual) para evitar conflito. Validado localmente; **ainda não publicado nem commitado**.
+- **24/09/2026:** página reestruturada para a **nova copy de 12 blocos** e **redesign visual** completo (pedido da cliente: visual "simples e pouco chamativo"). Feito em sequência (copy → visual) para evitar conflito. Validado localmente; **ainda não publicado**. Código no GitHub: remote `pv-ebook` → https://github.com/mppartnersprincipal-svg/pv-bia-ebook (branch `main` rastreia esse remote; `origin` = repo antigo do linktree).
 
 ## Decisões e regras aprovadas
 
